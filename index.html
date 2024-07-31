@@ -1,69 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div id="con">
-      <div id="Head">
-        <img src="CHINmcl.png" alt="CHINmcl.png" height="70%">
-        <h1>Username : CHINmcl<br> Server : Thailand<br> Level : 15 <br> Class : Student</h1>
-    </div>
-  </div>
-  
-  
-  
-  
-  <div id="con2">
-    <div id="about">
-      <h1 class="st">Status</h1>
-      
-      
-      <img src="html.png" alt="html.png" >
-      <div class="bg">
-        <div class="bg1" id="ht">
-          <h1>91%</h1>
-        </div>
-      </div>
-      <br>
-      
-      <img src="css.png" alt="css.png">
-      <div class="bg">
-        <div class="bg1" id="cs">
-          <h1>61%</h1>
-        </div>
-      </div>
-      <br>
-      
-      <img src="py.png" alt="py.png">
-      <div class="bg">
-        <div class="bg1" id="py">
-          <h1>48%</h1>
-        </div>
-      </div>
-      <br>
-      
-      <img src="js.png" alt="js.png">
-      <div class="bg">
-        <div class="bg1" id="jvs">
-          <h1>11%</h1>
-        </div>
-      </div>
-      <br>
-      
-      
-      
-      
-      
-    </div>
-  </div>
-  
-  
-  
-  
-</body>
-</html>
+<title>New!? game made by CHINmcl😎😎(cap)</title>
+<link rel="stylesheet" href="styles.css">
+<div id="game-container">
+	<div id="board-container">
+		<canvas id="tetris-board" width="300" height="600"></canvas>
+	</div>
+	<div id="controls">
+		<div id="score">Score: <span id="score-value">0</span></div>
+		<div id="next-piece-container">
+			<h3>Next Piece:</h3>
+			<canvas id="next-piece" width="120" height="120"></canvas>
+		</div>
+		<div class="d-pad">
+			<div id="left" class="d-pad-button">&#9664;</div>
+			<div id="right" class="d-pad-button">&#9654;</div>
+			<div id="down" class="d-pad-button">&#9660;</div>
+			<div id="rotate" class="d-pad-button">R</div>
+		</div>
+		<button id="start-button">Start Game</button>
+		<div id="instructions">
+			Use arrow keys to move.<br>
+			Press UP, "R" or "0" to rotate.
+		</div>
+		<div id="music-control">
+			<label>
+				<input type="checkbox" id="music-toggle" checked> Background Music
+			</label>
+		</div>
+	</div>
+</div>
+
+<script src="javascript.js"></script>
